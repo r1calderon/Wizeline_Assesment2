@@ -1,0 +1,23 @@
+{
+  "name": "wizeacademyqa",
+  "version": "1.0.0",
+  "description": "backend postman automation",
+  "main": "index.js",
+  "scripts": {
+    "testAPI": "npx newman run './Assesment2_APP/tests/backEnd/collection/Assesment2 Project.postman_collection.json' -e './Assesment2_APP/tests/backEnd/envVariables/Assesment_2_environment.postman_environment.json' -r htmlextra --reporter-htmlextra-export './Assesment2_APP/tests/backEnd/reports/reporte.html'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/r1calderon/Wizeline_Assesment2.git"
+  },
+  "author": "Rigoberto Calderon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/r1calderon/Wizeline_Assesment2/issues"
+  },
+  "homepage": "https://github.com/r1calderon/Wizeline_Assesment2#readme",
+  "dependencies": {
+    "newman": "^5.2.2",
+    "newman-reporter-htmlextra": "^1.20.1"
+  }
+}
